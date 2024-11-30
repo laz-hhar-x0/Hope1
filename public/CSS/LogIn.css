@@ -45,6 +45,11 @@ justify-content: space-between;
 }
 
 
+.green  #imagee{
+    width: 150;
+    height: 150;
+}
+
 
 .inside{
 display: flex;
