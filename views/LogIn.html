@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/backgrnd/LogoApp.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/LogIn.css">
+    <title>LogIn</title>
+</head>
+<body>
+            <!-- <style>
+                *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            height: 100vh;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+            background: linear-gradient(50deg, #5FD068, #0C359E);
+
+        }
+        body.fade-out {
+            opacity: 0;
+        }
+
+        .white{
+            width: 100%;
+            height: 96%;
+            border-radius: 14px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .black {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .green{
+            max-width: 540px;
+            width: 100%;
+            height: 744px;
+            margin:  auto;
+            border-radius: 4px;
+            display: inline;
+            text-align: center;
+            justify-content: space-between;
+            
+        }
+         
+        
+
+        .inside{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+        .continer{
+            margin-top: 10%;
+            padding: 30px;
+            width: 78%;
+            height: 530px;
+            background-color: rgba(138, 136, 136, 0.047);
+            border: 2px solid #26e2b6;
+            border-radius: 13px;
+        }
+
+        
+
+        .continer  .gosh{
+            color: aqua;
+            font-size: 13px;
+            padding: 0 4px;
+        }
+
+       
+
+
+        .inpt{
+            margin: 30px 0;
+            padding: 20px 0;
+            color:#1140b6 ;
+            font-size: 19px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+        }
+       
+        .inpt .create{
+            padding: 8px 12px;
+            border: none;
+            outline: none;
+            border-radius: 12px;
+            background-color: #275bdd;
+            color: #26e2b6;
+            font-size: 19px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .inpt .create:hover{
+            background-color: #0C359E;
+        }
+        
+         .tel{
+            margin: 13px 0 ;
+            display: flex;
+            justify-content: space-between;
+        }
+        .inpt input{
+            border-radius: 6px;
+            color: #8deed1;
+            margin-left: 15px;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            outline: none;
+            background: linear-gradient(to right, #0c359edd , #58ad5f);
+            padding: 9px 12px ;
+        }
+        .inpt input::selection{
+            background-color: #58ad5f;
+            color: #fff;
+        }
+        
+         .info .page3 .page3one {
+            padding:  0 9px;
+            width: 98%;
+            text-align: left;
+        }
+
+          textarea::placeholder{
+            color: #1de7b8;
+        }
+            .info .page3 .page3one textarea{
+            width: 100%;
+            border: 1px solid  #26e2b674;
+            outline: none;
+            background-color: #26e2b602;
+            color: aqua;
+            border-radius: 12px;
+            padding: 6px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        
+            .move {
+            /* background-color: #0C359E; */
+            display: flex;
+            justify-content: space-between;
+            color: #0C359E;
+            font-size: 24px;
+            /* position: absolute; */
+            /* bottom: 2px;  */
+        }
+       
+
+       
+            </style> -->
+
+
+
+    <div class="white">
+        <div class="black">
+            <div class="green">
+                 <!-- <i class="fa-sharp fa-solid fa-dove" style="color: #0962fb;"></i> -->
+                  <img src="/backgrnd/hope.jpg" alt="error" width="150px" height="150px" style="border-radius: 50%;">
+                   
+                  
+                  <div class="inside">
+
+                        <div class="continer">
+                           
+                          
+                               <div class="gosh" id="indam">
+                                <h1>    انضم الينا الان<br>!hope  في  </h1>
+                               </div>
+                          
+                        
+
+                           
+                               
+
+
+                            <div class="inpt">
+                                <form action="/" method="post">
+
+                                   <div class="info">
+                                       <!-- firstname,  lastname,  email,  phone  -->
+                                       <div id="page1" style="display: block;">
+                                               <div class="tel" id="telone">
+                                                   <label for="title">First name:</label>
+                                                   <input type="text" id="title" name="frstName" required>
+                                               </div>
+   
+                                               <div class="tel" id="teltwo">
+                                                   <label for="title">Last name:</label>
+                                                   <input type="text" id="title" name="lastName" required>
+                                               </div>
+                                            
+                                               <div class="tel" id="telthree">
+                                                   <label for="title">Email :</label>
+                                                   <input type="email" id="title" name="Email" placeholder="don't forget :  @gmail.com" required>
+                                               </div>
+   
+                                               <div class="tel" id="telfour">
+                                                   <label for="title">Tlf :</label>
+                                                   <input type="number"  id="title" name="Tlf" required>
+                                               </div>
+                                       </div>
+                                       
+                               
+                                       <!-- matrecuL  , choix , annee -->
+                                       <div id="page2" style="display: none;">
+                                           <div class="tel">
+                                               <label for="title">MatrecuL :</label>
+                                               <input type="text" id="title" name="MatrecuL" required>
+                                           </div>
+   
+                                           <div class="tel">
+                                               <label for="title">Choix :</label>
+                                               <input type="text" id="title" name="Choix" required>
+                                           </div>
+                                       
+                                           <div class="tel">
+                                               <label for="title">annee :</label>
+                                               <input type="text" id="title" name="annee" required>
+                                           </div>
+                                       </div>
+                                       
+                                       <!-- exprience  , why you want insid hope -->
+                                       <div id="page3"  style="display: none;">
+                                       
+                                                   <div class="page3one">
+                                                    <label >what you know : </label><br>
+                                                    <textarea  rows="5" cols="50" placeholder="enter your disecription  ... " name="whatYouKnow"></textarea>                                                  
+                                                   </div>
+
+                                                   <div class="page3one">
+                                                    <label > why you want Sign In to Clube Hope :</label><br>
+                                                    <textarea  rows="5" cols="50" placeholder="enter your disecription  ... " name="WhyYouWantJoining"></textarea>                                                  
+                                                   </div>
+                                               
+                                                   
+                                                   
+                                               
+                                       </div>
+
+                                   </div>
+                                      
+                                   
+                                  
+
+
+                                    <button class="create" id="sbmt" style="display: none;">Submit</button>
+                                </form>
+                            </div>      
+
+                             
+                          
+
+
+                            <div class="move">
+                                       
+                                <div id="back" onclick="bck()" style="display: none ; transition: 1s;">
+                                    <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                                </div>
+                                
+                                <div id="next" onclick="nxt()">
+                                 <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div> 
+
+
+                            </div>
+
+
+                            
+                            
+                        </div>
+                        
+                   </div>
+                
+            </div>
+         </div>
+    </div>
+    
+
+
+
+
+
+        <script>
+            const page1 = document.getElementById("page1");
+            const page2 = document.getElementById("page2");
+            const page3 = document.getElementById("page3");
+            const back = document.getElementById("back");
+            const next = document.getElementById("next");   
+            const sbmt = document.getElementById("sbmt");   
+            const indam = document.getElementById("indam");   
+
+            const firstname = document.getElementById('telone').value;
+            const lastname = document.getElementById('teltwo').value;
+            const email = document.getElementById('telthree').value;
+            const tlf = document.getElementById('telfour').value;
+
+
+            function nxt(){
+                
+             back.style.display == "none" ? back.style.display="block":back.style.display="block";
+             if (page1.style.display === "block"){
+                 page1.style.display ="none";
+                 page2.style.display ="block";
+             }else
+             if (page2.style.display == "block"){
+                page2.style.display ="none";
+                page3.style.display ="block";
+             }
+             if (page3.style.display === "block"){
+                next.style.display="none";
+                sbmt.style.display="block";
+                indam.style.display="none";
+             }
+            }
+        
+            function bck(){
+                if ( page3.style.display === "block"){
+                    sbmt.style.display="none";
+                    page3.style.display ="none";
+                    page2.style.display ="block";
+                    next.style.display="block";
+                }else if (page2.style.display == "block") {
+                    page2.style.display ="none";
+                    page1.style.display ="block";
+                    next.style.display="block";
+                }   
+                page1.style.display == "block" ? back.style.display="none":back.style.display="block";
+            }
+        </script>
+
+
+<script src="/JS/Login.js" type="module"></script>
+</body>
+</html>
