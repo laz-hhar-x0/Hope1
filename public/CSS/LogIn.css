@@ -60,8 +60,8 @@ margin: 0 auto;
 margin-top: 6%;
 padding: 30px;
 width: 80%;
-height: 470px;
-background-color: rgba(138, 136, 136, 0.538);
+height: 520px;
+/* background-color: rgba(138, 136, 136, 0.538); */
 border: 2px solid #26e2b6;
 border-radius: 13px;
 position: relative;
@@ -111,16 +111,12 @@ background-color: #0C359E;
 .inpt #page2,
 .inpt #page1{
     margin: 0 auto;
-/* background-color: #545d73c2; */
 }
 
-/* .inpt #page3 {
-    width: 90%;
-} */
 .tel #title{
     margin: 2px 0;
     padding-left: 22px;
-    letter-spacing: .3px;
+    letter-spacing: .5px;
 }
 
 .tel{
@@ -135,7 +131,7 @@ background-color: #0C359E;
 .inpt input{
 width: 100%;
 border: none;
-border-radius: 0 0 0 18px;
+border-radius: 0 0 0 26px;
 border-bottom: 1px solid #1d4ab0 ;
 color: aqua;
 font-size: 11px;
@@ -155,10 +151,9 @@ color: #fff;
     margin-left: 270px;
 }
 
-
 .info #page3{
-    width: 100%;
-    /* margin: 0 auto; */
+    width: 80%;
+    margin: 0 auto;
     /* position: relative; */
     text-align: left;
 
@@ -166,25 +161,20 @@ color: #fff;
 
 .info #page3 .page3one {
 /* padding:   9px; */
-/* background-color: #2a59d191; */
  width: 100%; 
 } 
 
-.info #page3 .page3one  {
-    /* text-align: center; */
-    font-size: 14px;
-}
 
 .info #page3 .page3one textarea{
-width: 60%;
+width: 100%;
 border: 1px solid  #26e2b674;
 outline: none;
 background-color: #26e2b602;
 color: aqua;
 border-radius: 12px;
-padding: 3px 6px;
+padding: 0 6px;
 margin: 15px 0;
-font-size: 15px;
+font-size: 16px;
 } 
 ::placeholder{
     color: #1de7b887;
@@ -206,6 +196,6 @@ cursor: pointer;
 }
 
 .move #next{
-    margin-left: 90% ;
+    margin-left: 93% ;
 }
 
