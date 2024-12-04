@@ -43,7 +43,7 @@ app.post("/", (req, res) => {
             .then(() => {
                   app.listen(port , () => {
                       console.log(`http://localhost:${port}/`)
-                  }) ;
+                  });
                   })
              .catch((err) => {
                    console.log(err);
@@ -51,5 +51,5 @@ app.post("/", (req, res) => {
           
           
         // app.listen(port , () => {
-          //     console.log(`http://localhost:${port}/`)
-          // }) ;
+        //       console.log(`http://localhost:${port}/`)
+        //   }) ;

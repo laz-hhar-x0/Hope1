@@ -178,16 +178,34 @@
     <div class="white">
         <div class="black">
             <div class="green">
-                  <img src="/backgrnd/LogoHOPE.png" alt="error" width="120px" height="120px"  style="border-radius: 50%; margin: 10px 0 0;">
+                
                    
                   
                   <div class="inside">
 
                         <div class="continer">
-                           
-                          
-                               <div class="gosh" id="indam">
-                                <h1>    انضم الينا الان<br>!hope  في  </h1>
+                           <!-- <div id="frstpage">
+                           </div> -->
+                           <div id="page0" style="display: block;">
+                            <img src="/backgrnd/LogoHOPE.png" alt="error" width="120px" height="120px"  style="border-radius: 50%; margin: 10px 0 0;">
+                            <h1>    انضم الينا الان<br>!hope  في  </h1>
+                            <button onclick="hidefirstpage0()"> enter </button>
+                          </div>  
+                              
+                               <div class="gosh" id="indam" style="display: none;">
+                                        <div class="circle">
+                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="190px" height="190px">
+                                                <defs>
+                                                <linearGradient id="GradientColor">
+                                                    <stop offset="0%" stop-color="#1d4ab0" />
+                                                    <stop offset="100%" stop-color="#40e596" />
+                                                </linearGradient>
+                                                </defs>
+                                                
+                                                <circle cx="80" cy="100" r="30" stroke-linecap="round" />
+                                                <text x="80" y="105" text-anchor="middle" fill="#000" font-size="20px" font-family="Arial" dy=".3em">
+                                            </svg> -->
+                                        </div>
                                </div>
                           
                         
@@ -201,25 +219,26 @@
 
                                    <div class="info">
                                        <!-- firstname,  lastname,  email,  phone  -->
-                                       <div id="page1" style="display: block;">
-                                               <div class="tel" id="telone">
+                                       <div id="page1" style="display: none;">
+                                               <div class="tel" >
                                                    <label for="title">First name  :</label><br>
-                                                   <input type="text" id="title" name="frstName" required>
+                                                   <input type="text" id="telonee" name="frstName" required>
                                                </div>
    
                                                <div class="tel" id="teltwo">
                                                    <label for="title">Last name  :</label><br>
-                                                   <input type="text" id="title" name="lastName" required>
+                                                   <input type="text" id="teltwoo" name="lastName" required>
                                                </div>
                                             
                                                <div class="tel" id="telthree">
                                                    <label for="title">Email  :</label><br>
-                                                   <input type="email" id="title" name="Email" placeholder="don't forget :  @gmail.com" required>
+                                                   <input type="email" id="titleemail" name="Email" placeholder="don't forget :  @gmail.com" required>
                                                </div>
    
                                                <div class="tel" id="telfour">
                                                    <label for="title">Tlf  :</label><br>
-                                                   <input type="number"  id="title" name="Tlf" required>
+                                                   <!-- <input type="number"  id="telfourr" name="Tlf" required> -->
+                                                   <input type="text" id="telfourr" maxlength="10" placeholder="Enter 10 numbers ..." />
                                                </div>
                                        </div>
                                        
@@ -228,17 +247,36 @@
                                        <div id="page2" style="display: none;">
                                            <div class="tel">
                                                <label for="title">MatrecuL :</label><br>
-                                               <input type="text" id="title" name="MatrecuL" required>
+                                               <input type="text" id="MatrecuL" maxlength="12" placeholder="bac + MatrecuL" name="MatrecuL" required>
                                            </div>
    
                                            <div class="tel">
                                                <label for="title">Choix :</label><br>
-                                               <input type="text" id="title" name="Choix" required>
+                                               <!-- <input type="text" id="Choix" name="Choix" required> -->
+                                              
+                                               <select id="Choix">
+                                                <option value="choose">choose  ...</option>
+                                                <option value="informatique">informatique</option>
+                                                <option value="biology ">biology</option>
+                                                <option value="droit">droit</option>
+                                                <option value="ecoomarce">ecoomarce</option>
+                                                <option value="mathe">mathe</option>
+                                              </select>
+
                                            </div>
                                        
                                            <div class="tel">
                                                <label for="title">annee :</label><br>
-                                               <input type="text" id="title" name="annee" required>
+                                               <!-- <input type="text" id="annee" name="annee" required> -->
+                                               <select id="annee">
+                                                <option value="choose">choose  ...</option>
+                                                <option value="Lisance 1">Lisance 1</option>
+                                                <option value="Lisance 2">Lisance 2</option>
+                                                <option value="Lisance 3">Lisance 3</option>
+                                                <option value="Master 1">Master 1</option>
+                                                <option value="Master 2">Master 2</option>
+                                              </select>
+
                                            </div>
                                        </div>
                                        
@@ -257,7 +295,7 @@
                                                
                                                    
                                                    <button class="create" id="sbmt" style="display: none;">Submit</button>
-                                                </div>
+                                       </div>
                                                    
                                                
 
@@ -280,7 +318,7 @@
                                     <i class="fa-sharp fa-solid fa-arrow-left"></i>
                                 </div>
                                 
-                                <div id="next" onclick="nxt()">
+                                <div id="next" onclick="nxt()" style="display: none;">
                                  <i class="fa-sharp fa-solid fa-arrow-right"></i>
                                 </div> 
 
@@ -304,6 +342,7 @@
 
 
         <script>
+            const page0 = document.getElementById("page0");
             const page1 = document.getElementById("page1");
             const page2 = document.getElementById("page2");
             const page3 = document.getElementById("page3");
@@ -311,47 +350,111 @@
             const next = document.getElementById("next");   
             const sbmt = document.getElementById("sbmt");   
             const indam = document.getElementById("indam");   
+            const Choix = document.getElementById('Choix').value;
+            // const annee = document.getElementById('annee').value;
+          
+function hidefirstpage0(){
+    if (page0.style.display === "block") {
+        page0.style.display = "none";
+        page1.style.display = "block";
+        next.style.display = "block";
+        back.style.display = "block";
+        next.style.marginLeft = "0px";
+}
+}
 
-            const firstname = document.getElementById('telone').value;
-            const lastname = document.getElementById('teltwo').value;
-            const email = document.getElementById('telthree').value;
-            const tlf = document.getElementById('telfour').value;
+function nxt(){
+    const firstname = document.getElementById('telonee').value;
+    const lastname = document.getElementById('teltwoo').value;
+    const tlf = document.getElementById('telfourr').value.trim();
+    const email = document.getElementById('titleemail').value.trim();
+
+    const Choix = document.getElementById('Choix').value;    
+    const annee = document.getElementById('annee').value;
+    const MatrecuL = document.getElementById('MatrecuL').value;
 
 
-            function nxt(){
-                
-             back.style.display == "none" ? back.style.display="block":back.style.display="block";
-             if (page1.style.display === "block"){
-                 page1.style.display ="none";
-                 page2.style.display ="block";
-                 next.style.marginLeft="0px";
-             }else
-             if (page2.style.display == "block"){
-                page2.style.display ="none";
-                page3.style.display ="block";
-             }
-             if (page3.style.display === "block"){
-                next.style.display="none";
-                sbmt.style.display="block";
-                indam.style.display="none";
-             }
-            }
-        
+    while (firstname === "" || lastname === "" || tlf === "" || email === "") {
+    alert("input all information ");
+    return ;
+    }
+
+
+
+    while (!(email.includes('@gmail.com') || email.includes('@GMAIL.COM'))) {
+        alert("البريد الإلكتروني يجب أن يحتوي على gmail.com@");
+        return;
+    }
+    
+    while (tlf.length !== 10 || isNaN(tlf)) {
+        alert("ادخل 10 ارفام في خانة الهاتف  : ");
+        return;
+    }
+    while (( MatrecuL.length != 12 ) &&(page2.style.display === "block")) {
+        alert("ادخل الرقم الجامعي كاملا ..");
+        return;
+    }
+  
+   while ((Choix ==="choose") &&(page2.style.display === "block")) {
+    alert("select choix .");
+    return;
+   }
+   while ((annee ==="choose") &&(page2.style.display === "block")) {
+    alert("select Year .");
+    return;
+   }
+
+
+
+       
+   
+
+    if (back.style.display === "none"){
+        back.style.display = "block";
+
+    }else if (page1.style.display === "block"){
+        page1.style.display = "none";
+        page2.style.display = "block";
+        next.style.marginLeft = "0px";
+    }else if (page2.style.display === "block"){
+
+        page2.style.display = "none";
+        page3.style.display = "block";
+        next.style.display = "none";
+        sbmt.style.display = "block";
+    }
+
+    
+     }
+    
+
+
+
+
+
             function bck(){
                 if ( page3.style.display === "block"){
                     sbmt.style.display="none";
                     page3.style.display ="none";
                     page2.style.display ="block";
                     next.style.display="block";
-                    indam.style.display="block";
+                    next.style.marginLeft = "0px";
                 }else if (page2.style.display == "block") {
                     page2.style.display ="none";
                     page1.style.display ="block";
                     next.style.display="block";
+                } else if(page1.style.display === "block"){
+                    page1.style.display ="none";
+                    page0.style.display = "block";
                     next.style.marginLeft="93%";
-                }   
-                page1.style.display == "block" ? back.style.display="none":back.style.display="block";
+                    back.style.display="none";
+                    next.style.display="none"
+                } 
+                
             }
+            
+
+            
         </script>
 
 
