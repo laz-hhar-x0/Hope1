@@ -259,12 +259,28 @@
                                                <!-- <input type="text" id="Choix" name="Choix" required> -->
                                               
                                                <select id="Choix">
-                                                <option value="choose">choose  ...</option>
+                                                <!-- <option value="choose">choose  ...</option>
                                                 <option value="informatique">informatique</option>
                                                 <option value="biology ">biology</option>
                                                 <option value="droit">droit</option>
                                                 <option value="ecoomarce">ecoomarce</option>
-                                                <option value="mathe">mathe</option>
+                                                <option value="mathe">mathe</option> -->
+                                                        <option value="choose">choose  ...</option>
+                                                        <option value="informatique">informatique</option>
+                                                        <option value="Biologists  ">Biologists</option>
+                                                        <option value="Math">Math</option>
+                                                        <option value="Physics">Physics</option>
+                                                        <option value="Chemistry">Chemistry</option>
+                                                        <option value="Geologic">Geologic</option>
+                                                        <option value="Sports">Sports</option>
+                                                        <option value="Medcine">Medcine</option>
+                                                        <option value="St">St</option>
+                                                        <option value="Droi">Droi</option>
+                                                        <option value="Humanity science">Humanity science</option>
+                                                        <option value="Comunety science">Comunety science</option>
+                                                        <option value="Arabic">Arabic</option>
+                                                        <option value="Arts">Arts</option>
+                                                        <option value="Author">Author</option>
                                               </select>
 
                                            </div>
@@ -482,7 +498,7 @@ function nxt(){
 
 
     
-    while (firstname === "" || lastname === "" || tlf === "" || email === "") {
+while (firstname === "" || lastname === "" || tlf === "" || email === "") {
     error.style.display = "block";
     error.innerHTML = "Input all information";
     setTimeout(() => {
@@ -492,7 +508,7 @@ function nxt(){
 }
 
 
-    while (!(email.includes('@gmail.com') || email.includes('@GMAIL.COM'))) {
+ while (!(email.includes('@gmail.com') || email.includes('@GMAIL.COM'))) {
         error.style.display = "block";
         error.innerHTML="البريد الإلكتروني يجب أن يحتوي على gmail.com@";
         setTimeout(() => {
@@ -501,7 +517,7 @@ function nxt(){
         return;
     }
     
-    while (tlf.length !== 10 || isNaN(tlf)) {
+ while (tlf.length !== 10 || isNaN(tlf)) {
         error.style.display = "block";
         error.innerHTML="ادخل 10 ارفام كاملة في خانة الهاتف  : ";
         setTimeout(() => {
@@ -509,7 +525,8 @@ function nxt(){
         }, 2000);
         return;
     }
-    while (( MatrecuL.length != 12 ) &&(page2.style.display === "block")) {
+
+ while (( MatrecuL.length != 12 ) &&(page2.style.display === "block")) {
         error.style.display = "block";
         error.innerHTML="ادخل الرقم الجامعي كاملا ..";
         setTimeout(() => {
