@@ -16,10 +16,14 @@ app.set('view engine', 'ejs');
 
 app.get('/',(req,res)=>{
     res.render('hope', { } );
-})
+});
 
-
-
+app.get('/fnsh',(req,res)=>{
+  res.render('finish', { } );
+});
+app.get('/fnshh',(req,res)=>{
+  res.render('hope', { } );
+});
 
 app.post("/", (req, res) => {
   const Hope = new hope(req.body);
@@ -27,12 +31,12 @@ app.post("/", (req, res) => {
   Hope
   .save()
   .then( result => {
-                res.redirect("/");
+    res.render('finish', { } );
               })
               .catch( err => {
                 console.log(err);
               });
-          });
+    });
 
 
 
@@ -51,5 +55,5 @@ app.post("/", (req, res) => {
           
           
         // app.listen(port , () => {
-        //       console.log(`http://localhost:${port}/`)
-        //   }) ;
+        //       console.log(`http://localhost:${port}/`);
+        //   });

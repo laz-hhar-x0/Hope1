@@ -259,11 +259,88 @@ cursor: pointer;
     color: #0C359E;
 }
 
+#error{
+    width: 100%;
+    margin-top: 20px;
+    color: red;
+    font-size: 15px;
+}
 
+.page5{
+    margin-top: -30px;
+    background: linear-gradient(95deg, #1D4DAF, #3FE196);
+    border-radius: 10px;
+    width: 350px;
+    height: 100vh;
+    overflow: auto;
+}
+.page5 img {
+    width: 90px ;
+    height: 90px;
+    border-radius: 50%;
+    margin: 10px 0 0; 
+    box-shadow: 2px 2px 12px rgb(111, 108, 108);
+}
+.page5 .divindise{
+    margin: 0 auto;
+    height:45vh;
+    /* background-color: #2a915892; */
+    border-radius: 12px;
+    width: 90%;
+    overflow: hidden;
+    padding: 1px 0 0;
+}
+.page5 .divindise h4 {
+    color: #ffffff;
+    text-shadow: 2px 2px 10px black;
+    margin:  0;
+    margin: 10px 0;
+}
+.contactUs{
+    /* background-color: #51d88e6e; */
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 2px;
+    border-radius: 18px 18px 0 0 ;
+}
 
+.lastone{
+    margin: 0 auto;
+    width: 80%;
+    height: 40vh;
+    /* background-color: #6eb48d; */
+    border-radius: 10px;
+    padding: 15px 0  0 10px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    margin:  0 0 14px 10px;
+}
+.contact    .info{
+    font-size: small;
+    text-align: left;
+    margin-left: 10px;
+}
 
+a{
+    text-decoration: none;
+
+}
+.btn a{
+    width: 90px;
+    padding: 5px 20px;
+    background-color: #0c359e52;
+    color: #e1e1e18f;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
     /* ------------------  circle ---------------- */
-
+    
     /* calcuL  (   473 - (472 * value )   ) */
 circle {
     fill : none ;
@@ -277,4 +354,4 @@ circle {
     100%{
         stroke-dashoffset : 300;
     }
-}
+} 
