@@ -22,7 +22,7 @@ app.get('/fnsh',(req,res)=>{
   res.render('finish', { } );
 });
 app.get('/fnshh',(req,res)=>{
-  res.render('hope', { } );
+  res.redirect('/hope', { } );
 });
 
 app.post("/", (req, res) => {
