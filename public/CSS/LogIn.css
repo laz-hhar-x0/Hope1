@@ -284,7 +284,7 @@ cursor: pointer;
     margin-top: -30px;
     background: linear-gradient(95deg, #1D4DAF, #3FE196);
     border-radius: 10px;
-    width: 350px;
+    width: 400px;
     margin: 0 auto;
     height: 100vh;
     overflow: auto;
@@ -298,12 +298,12 @@ cursor: pointer;
 }
 .page5 .divindise{
     margin: 0 auto;
-    height:45vh;
+    height:40vh;
     /* background-color: #2a915892; */
     border-radius: 12px;
     width: 90%;
     overflow: hidden;
-    padding: 1px 0 0;
+    /* padding: 1px 0 0; */
 }
 .page5 .divindise h4 {
     color: #ffffff;
@@ -341,7 +341,6 @@ cursor: pointer;
 
 a{
     text-decoration: none;
-
 }
 .btn a{
     width: 90px;
@@ -352,7 +351,7 @@ a{
     outline: none;
     border-radius: 10px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
     /* ------------------  circle ---------------- */
     
